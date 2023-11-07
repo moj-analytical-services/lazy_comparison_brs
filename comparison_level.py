@@ -35,12 +35,6 @@ class ComparisonLevel:
         else:
             self.label_for_charts = label_for_charts
 
-    def create_sql(self) -> str:
-        return self.sql_condition
-
-    def create_label_for_charts(self) -> str:
-        return self.label_for_charts
-
     @classmethod
     def with_level_dict(cls, level_dict: dict):
         """Alternate constructor. Used if a dictionary has been
